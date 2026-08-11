@@ -1,0 +1,7 @@
+ubuntu@ip-172-31-26-5:~/app.analyticalman.com$ sudo docker ps
+CONTAINER ID   IMAGE                        COMMAND                  CREATED        STATUS        PORTS                                       NAMES
+de549e9d6eb4   nginx:1.25.2-alpine          "/docker-entrypoint.…"   9 months ago   Up 9 months   0.0.0.0:8060->80/tcp, :::8060->80/tcp       app.analyticalman.com
+7e6916a55d9e   appanalyticalmancom-amapp    "/bin/sh -c 'gunicor…"   9 months ago   Up 9 months   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   am_app
+a9d6fc342168   nginx:1.25.2-alpine          "/docker-entrypoint.…"   9 months ago   Up 9 months   0.0.0.0:8090->80/tcp, :::8090->80/tcp       analyticalman.com
+f21d692c5fee   wordpress:6.3.0-fpm-alpine   "docker-entrypoint.s…"   9 months ago   Up 9 months   9000/tcp                                    am_wordpress
+a93b5a2ea1c5   mysql:8.1.0                  "docker-entrypoint.s…"   9 months ago   Up 9 months   3306/tcp, 33060/tcp                         am_db
